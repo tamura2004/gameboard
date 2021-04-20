@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SkyWay - P2P Data example</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="p2p-data">
+        <div>
+          <span>Your ID: <span id="js-local-id"></span></span>
+          <button onclick="copyToClipboard()">Copy</button>
+          <input type="text" placeholder="Remote Peer ID" id="js-remote-id">
+          <button id="js-connect-trigger">Connect</button>
+          <span id="js-messages"></span>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+    <script src="//cdn.webrtc.ecl.ntt.com/skyway-4.4.1.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
